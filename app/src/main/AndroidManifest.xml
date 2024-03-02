@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SignInActivity"
+                android:export="false"></activity>
+        <activity android:name=".CreateAccount"
+            android:export="false"></activity>
+
     </application>
 
 </manifest>
