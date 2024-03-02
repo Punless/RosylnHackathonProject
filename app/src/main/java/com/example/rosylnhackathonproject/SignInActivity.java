@@ -57,9 +57,12 @@ public class SignInActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful())
                         {
+
                             //start activity
                             User.changeUser(task.getResult().getUser());
                             Toast.makeText(SignInActivity.this,User.getId(),Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(SignInActivity.this, madLibTest.class);
+                            startActivity(intent);
                         }
                         else
                         {
