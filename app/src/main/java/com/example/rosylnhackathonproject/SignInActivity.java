@@ -21,14 +21,39 @@ public class SignInActivity extends AppCompatActivity {
         Button signIn = findViewById(R.id.button2);
         Button signUp = findViewById(R.id.button3);
 
+
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String emailText = email.getText().toString();
+                String passwordText = password.getText().toString();
+                launchNextAct(emailText,passwordText);
+            }
+        });
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launchCreateAccount();
             }
         });
     }
 
+    //Go to the madLib activity
+    private boolean launchNextAct(String email, String password)
+    {
+       if(true)//check for sign in fail
+       {
+            return false;
+       }
+       //put sign in method
+
+        //put new activity
+        Intent intent = new Intent();//put in new activity
+
+        return true;
+
+
+    }
     //Create an account
     private void launchCreateAccount()
     {
