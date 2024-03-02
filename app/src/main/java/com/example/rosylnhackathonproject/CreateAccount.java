@@ -60,6 +60,7 @@ public class CreateAccount extends AppCompatActivity {
                                     .setDisplayName(username)
                                     .build();
                         }
+
                     }
                 });
     }
