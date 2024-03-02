@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -26,9 +27,14 @@ public class CreateAccount extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         EditText email = findViewById(R.id.editTextTextEmailAddress3);
         EditText username = findViewById(R.id.editTextUsername);
-        EditText editText = findViewById(R.id.editTextTextPassword);
+        EditText password = findViewById(R.id.editTextTextPassword);
         Button button = findViewById(R.id.button);
-
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                createAccount(email.getText().toString(),password.getText().toString(),username.getText().toString());
+            }
+        });
     }
     private void createAccount(String email, String password, String username) {
         mAuth.createUserWithEmailAndPassword(email, password)
