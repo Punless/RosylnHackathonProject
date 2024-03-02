@@ -2,19 +2,13 @@ package com.example.rosylnhackathonproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class DisplayMadLibs extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Intent intent = new Intent(this, MadLibsTemplates.class);
-
-        startActivity(intent);
-
-
+        setContentView(R.layout.activity_display_mad_libs);
     }
 }
