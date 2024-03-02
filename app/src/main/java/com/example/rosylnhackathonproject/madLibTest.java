@@ -26,7 +26,8 @@ public class madLibTest extends AppCompatActivity {
         User.getRef().get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
-                text.setText(task.getResult().getValue().toString());
+                if(task!=null)
+                    text.setText(task.getResult().getValue().toString());
             }
         });
         button.setOnClickListener(new View.OnClickListener() {

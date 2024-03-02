@@ -49,9 +49,10 @@ public class MadLibsTemplates extends AppCompatActivity {
                 oneVerb = verbOne.getText().toString();
                 twoVerb = verbTwo.getText().toString();
 
-                display.setText(createTemplate(template1, oneNoun, twoNoun, oneAdjective, twoAdjective, oneVerb, twoVerb));
+                User.setMadLib(createTemplate(template1, oneNoun, twoNoun, oneAdjective, twoAdjective, oneVerb, twoVerb));
 
-
+                Intent intent = new Intent(MadLibsTemplates.this, madLibTest.class);
+                startActivity(intent);
 
 
             }
@@ -106,7 +107,7 @@ public class MadLibsTemplates extends AppCompatActivity {
         String returnString = "";
         for(String string:template)
         {
-            returnString.concat(string);
+            returnString = returnString.concat(string);
         }
         return returnString;
 

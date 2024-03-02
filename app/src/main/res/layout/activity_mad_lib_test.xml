@@ -10,8 +10,8 @@
         android:id="@+id/madlib"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="257dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,21 +20,10 @@
         android:id="@+id/giveMadLib"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="543dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="648dp"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/modifyMadLib"
-        android:layout_width="296dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="424dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

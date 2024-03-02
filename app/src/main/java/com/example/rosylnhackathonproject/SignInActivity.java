@@ -61,7 +61,7 @@ public class SignInActivity extends AppCompatActivity {
                             //start activity
                             User.changeUser(task.getResult().getUser());
                             Toast.makeText(SignInActivity.this,User.getId(),Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(SignInActivity.this, madLibTest.class);
+                            Intent intent = new Intent(SignInActivity.this, MadLibsTemplates.class);
                             startActivity(intent);
                         }
                         else
