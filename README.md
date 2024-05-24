@@ -30,5 +30,5 @@ Import Project by Android Studio Menu > File > Import Project..
 
 ![App Screenshot](https://github.com/Punless/RosylnHackathonProject/assets/106124400/5b48d8db-5266-4ece-baea-8a94ff55488c)
 ![App Screenshot](https://github.com/Punless/RosylnHackathonProject/assets/106124400/e4e07cd2-241a-4b6b-abb8-96b99fa6bcaa)
-![App Screenshot](https://github.com/Punless/RosylnHackathonProject/assets/106124400/789ab467-9ee4-4220-9d49-8fac5a6988c9)
+
 
